@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+//We will evaluate conditions based on employee eligibility for a bonus.
+public class EmployeeEligiblityForaBonus {
+    public static void main(String args[]){
+        Scanner scanner = new Scanner(System.in);
+        //A company has some rules for bonus aligibility
+        
+        System.out.print("Enter your name :");
+        String name = scanner.nextLine();
+                
+        System.out.print("how many years of worked :");
+        int  EmployeeAnswer = scanner.nextInt();
+        String YearsOfService = (EmployeeAnswer >= 5)  ? "  Years Of Service is ok and He is eligible for a bonus" : "  Years Of Service not ok and He is not eligible for a bonus" ;
+        
+        System.out.print("Employee's performance rating is :");
+        float PerformanceRating = scanner.nextFloat();
+        String Rating = (PerformanceRating > 3.5 ) ? "  Performance Rating is ok and He is eligible for a bonus" : "  Performance Rating not ok and He is not eligible for a bonus" ;
+        
+        System.out.println("-------------------------------------");
+        System.out.println("Employee name is :"+ name);
+        System.out.println("Employee worked " + EmployeeAnswer + "years");
+        System.out.println(YearsOfService);
+        System.out.println("Performance Rating is " + PerformanceRating + "years");
+        System.out.println(Rating);
+        scanner.close();
+    }
+    
+}
