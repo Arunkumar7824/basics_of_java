@@ -1,0 +1,52 @@
+import java.util.Scanner;
+//Evaluate a student's performance based on their marks
+public class StudentsPerformance_marks {
+    //if marks are greater then or equal to 50, the student passes. Otherwise, the student fails
+    public static void main(String args[]){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter your Name :");
+        String Student_name = scanner.nextLine();
+        
+        System.out.print("Tamil mark :");
+        int T_sub = scanner.nextInt();
+        String Tamil = T_sub >= 50 ? "  subject- Tamil : pass" : "  subject- Tamil : fail" ;
+        
+        System.out.print("English mark :");
+        int E_sub = scanner.nextInt();
+        String English = E_sub >= 50 ? "  subject- Enlish : pass" : "  subject- Enlish: fail" ;
+        
+        System.out.print("Maths mark :");
+        int M_sub = scanner.nextInt();
+        String Maths= M_sub >= 50 ? "  subject-Maths : pass" : "  subject- Maths: fail" ;
+        
+        System.out.print("Science mark :");
+        int S_sub = scanner.nextInt();
+        String Science= S_sub >= 50 ? "  subject-Science : pass" : "  subject- Science: fail" ;
+        
+        System.out.print("Social_science mark :");
+        int Soc_S_sub = scanner.nextInt();
+        String Social_science = Soc_S_sub >= 50 ? "  subject- Social_science: pass" :"  subject- Social_science: fail" ;
+    
+                
+        System.out.println("-------------------------------");
+        System.out.println("Student name is :" + Student_name);        
+        System.out.println("Tamil mark :" + T_sub);
+        System.out.println(Tamil);
+        
+        System.out.println("English mark :" + E_sub);
+        System.out.println(English);
+        
+        System.out.println("Maths mark :" + M_sub);
+        System.out.println(Maths);
+        
+        System.out.println("science mark :" + S_sub);
+        System.out.println(Science);
+        
+        System.out.println("Social_science mark :" + Soc_S_sub);
+        System.out.println(Social_science);
+        
+        scanner.close();
+    }
+    
+}
