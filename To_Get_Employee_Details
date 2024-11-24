@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+//To get employee details frome the user
+public class TogetEmployeeDetails {
+    public static void main(String args[]){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter your name :");
+        String Name = scanner.nextLine();
+        
+        System.out.print("Enter you are employee or not :");
+        String Workstatus = scanner.nextLine();
+        
+        System.out.print("Enter your age :");
+        int Age = scanner.nextInt();
+        
+        //String Name2 = (Name1 == "Employee") ? "Yes, he is employee" : "No, he is not a employee";
+        
+        System.out.print("Enter your current salary :");
+        int Sallary = scanner.nextInt();
+        
+        System.out.print("Enter your grade :");
+        float Grade = scanner.nextFloat();
+        
+        System.out.println("------------------------------------------------------");
+        System.out.println("Employee name is :" + Name);
+        System.out.println("Employee age is :" + Age);
+        System.out.println("Employee sallary is :" + Sallary);
+        System.out.println("Claint are a :" + Workstatus);
+        System.out.println("Employee grade is :" + Grade);
+        scanner.close();
+    }
+    
+}
