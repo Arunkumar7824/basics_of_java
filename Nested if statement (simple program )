@@ -1,0 +1,20 @@
+//Nested if statment (it's important)
+public class NestedIfStatment {
+    public static void main (String[] args){
+        String address = "delhi,india";
+        
+        if(address.endsWith("india")){
+            if(address.contains("Meerut")){
+                System.out.print("your city is Meerut");
+            }
+            else if (address.contains("Noida")){
+                System.out.print("your city is Noida");
+            }
+            else{
+                System.out.print(address.split(",")[0]);
+            }}
+        else{
+            System.out.print("your are not living in india ");
+        }    
+    }
+}
