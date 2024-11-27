@@ -1,0 +1,20 @@
+import java.util.Scanner;
+//Simple if-else statment
+
+public class IfElseStatment {
+    public static void main(String args[]){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the student mark :");
+        int S_Mark = scanner.nextInt();
+        
+        if (S_Mark >= 35){
+            System.out.print("Student, got a pass mark, The mark is " + S_Mark);    
+        }
+        else {
+            System.out.print("Student, got a fail mark, The mark is " + S_Mark);
+        }
+        
+    }
+    
+}
