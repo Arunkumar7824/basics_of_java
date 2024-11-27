@@ -1,0 +1,21 @@
+//if else if statment
+public class IfElseIfStatment {
+    public static void main(String args[]){
+        String city = "Delhi";
+        
+        if (city == "Meerut"){
+            System.out.print("city is Meerut");
+        }
+        else if (city == "Noida"){
+            System.out.print("city is Noida");
+        }
+        else if (city == "Agra"){
+            System.out.print("city is Agra");
+        }
+        else{
+            System.out.print("city is Delhi");
+        }
+    }
+    
+    
+}
