@@ -1,0 +1,34 @@
+import java.util.Scanner;
+//Online shopping discount with user input
+
+public class Discount_onlineShopping {
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Enter the total purchese amount : ");
+        Float amount = scan.nextFloat();
+        System.out.println("---------------------------------------");
+        
+        System.out.println("Original purchase Amount : $"+amount );
+         
+        //Purches amount is above $100, they get a 10% discount.
+        if (amount >= 100){
+            float num = ((amount/100)*10);
+            System.out.println("Discount : $"+num);
+            float num1 = amount-num;
+            System.out.println("Final Amount to pay :$"+num1);
+        }
+        //Purches amount is above $50, they get a 5% discount.
+        else if(amount >= 50){
+            float num2 = ((amount/100)*5);
+             System.out.println("Discount : $"+num2);
+            float num3 = amount-num2;
+            System.out.println("Final Amount to pay :$"+num3);
+        }
+        //Otherwise no discount is applied.
+        else{
+            System.out.print("Sorry sir/ madam your not eligible the discount. so, you want to more purches.");
+        }
+        scan.close();
+    }
+}
