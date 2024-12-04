@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Login_page {
+    public static void main(String args[]){
+        String C_UserName = "admin";
+        String C_UserPassword = "password123";
+        int maxAttempts = 3;
+        int attempt = 0;
+        Scanner scanner = new Scanner(System.in);
+        
+        //Loop for login attemps 
+        while (attempt < maxAttempts){
+            System.out.print("Enter username: ");
+            String username = scanner.nextLine();
+            System.out.print("Enter password: ");
+            String password = scanner.nextLine();
+            
+            //Check if the username and password are correct
+            if(username.equals(C_UserName) && password.equals(C_UserPassword)){
+                System.out.println("Login successful !");
+                break;//Exit the loop after successful login
+            }
+            else{
+                attempt++;
+                System.out.println("Invalid username or password. Attempt "+attempt+" of "+ maxAttempts);
+            }
+        }
+        
+        if(attempt == maxAttempts){
+            System.out.println("Account locked due to too many attempts.");
+        }
+        scanner.close();
+    }
+    
+}
