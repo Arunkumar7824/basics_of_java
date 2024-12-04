@@ -1,0 +1,31 @@
+import java.util.Scanner;
+//Online shopping discount with user input
+
+public class Discount_onlineShopping {
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Enter the total purchese amount : ");
+        double amount = scan.nextFloat();
+        System.out.println("---------------------------------------");
+        
+        System.out.println("Original purchase Amount : $"+amount );
+        double disC = 0.0;
+        
+        if (amount >= 100){
+             disC = 10.0; //10% discount
+        }
+        else if(amount >= 50){
+             disC = 5.0;//5% discount
+        }
+        else{
+            System.out.print("you are not eligible in the discount. so, you have to purcher minimum above $50 rupees");
+        }
+      
+        double discount = ((amount/100)*disC);
+        System.out.println("discount : $"+discount);
+        System.out.print("Final amount to pay : $"+(amount-discount));
+    
+        scan.close();
+    }
+}
