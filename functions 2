@@ -1,0 +1,32 @@
+
+/**
+ *
+ * @author ARUNKUMAR
+ */
+
+public class METHODS2 {
+    public static void main (String args[]){
+        String inputS = " Hi, Java World! ";
+        
+        // Trim() method
+        String str1 = inputS.trim();
+        System.out.println("Trim mrthod :"+str1);
+        
+        // convert str to lowercase
+        String str2 = str1.toLowerCase();
+        System.out.println("conver lower case :"+str2);
+        
+        // check the string ends with '!'
+        if(str2.endsWith("!")){
+            System.out.println("yes, the ends is start with '!' ");
+        }
+        else {
+            System.out.print("No,the string is not ends with '!' ");
+        }
+        // replace
+        String result = str2.replace("java","Program");
+        System.out.print("Result :"+result);
+        
+    }
+}
+
