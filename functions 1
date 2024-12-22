@@ -1,0 +1,29 @@
+/**
+ *
+ * @author ARUNKUMAR
+ */
+public class METHODS {
+    public static void main (String args[]){
+        String input_str = " Hello,Python! Welcome to the your favourite programming.";
+        
+        // Trim() method
+        String RLT = input_str.trim();
+        System.out.println("Trim method :"+RLT);
+        
+        // convert str to lowercase
+        String SLT = RLT.toLowerCase();
+         System.out.println("conver lower case :"+SLT);
+        
+        // check the string stars with 'hello'
+        if(SLT.startsWith("hello")){
+            System.out.println("yes, the string is starts with 'hello' ");
+        }
+        else {
+            System.out.print("No,the string is not starts with 'hello' ");
+        }
+        // replace
+        String result = SLT.replace("python","Java");
+        System.out.print("Result :"+result);
+        
+    }
+}
