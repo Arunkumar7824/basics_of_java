@@ -1,0 +1,18 @@
+
+public class primeNumber {
+    public static void main (String ags[]){
+        int n=11;
+        int count = 0;
+        for(int i=1; i<=n; i++){
+            if(n%i==0){
+                count += 1;
+            }
+        }
+        if(count == 2){
+            System.out.println("Yes the "+n+" numbar is prime numbar.");
+        }
+        else{
+            System.out.print("The number is not a prime number");
+        }
+    }
+}
