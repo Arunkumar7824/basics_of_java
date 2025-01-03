@@ -1,0 +1,16 @@
+public class perfectNumber {
+    public static void main (String args[]){
+        int num = 28;
+        
+        int count=0;
+        for(int i=1; i<num; i++){
+            if(num%i==0) count += i;
+        }
+        if(count == num){
+            System.out.print("The "+num+" number is a perfect number.");
+        }
+        else{
+            System.out.print("The "+num+" number is not a perfect number.");
+        }
+    }
+}
