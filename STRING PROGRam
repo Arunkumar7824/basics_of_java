@@ -1,0 +1,10 @@
+public class ContainsSubstring { 
+ public static void main(String[] args) { 
+ String str = "Hello World"; 
+ String substring = "World"; 
+ if (str.contains(substring)) 
+ System.out.println("String contains '" + substring + "'."); 
+ else 
+ System.out.println("String does not contain '" + substring + "'."); 
+ } 
+} 
